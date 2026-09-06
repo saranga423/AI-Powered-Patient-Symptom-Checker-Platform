@@ -75,20 +75,6 @@ copy .env.example .env
 npm run dev
 ```
 
-Update `.env`:
-
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/full_stack_assignment
-JWT_ACCESS_SECRET=replace_with_a_long_random_access_secret
-JWT_REFRESH_SECRET=replace_with_a_long_random_refresh_secret
-ACCESS_TOKEN_EXPIRES=15m
-REFRESH_TOKEN_EXPIRES=7d
-ADMIN_SEED_EMAIL=admin@example.com
-ADMIN_SEED_PASSWORD=Admin@12345
-CLIENT_URL=http://localhost:5173
-```
-
 The server seeds the initial admin on startup if it does not already exist.
 
 ## Frontend Setup
@@ -98,18 +84,6 @@ cd client
 npm install
 copy .env.example .env
 npm run dev
-```
-
-Frontend `.env`:
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
-Open:
-
-```text
-http://localhost:5173
 ```
 
 ## API Endpoints
