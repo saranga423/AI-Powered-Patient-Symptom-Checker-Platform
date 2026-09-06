@@ -137,9 +137,3 @@ Server-side validation checks:
 - `404` Resource not found
 - `409` Duplicate resource
 - `500` Server error
-
-## Notes
-
-Refresh tokens are stored hashed in the database. Access tokens are short-lived JWTs. The frontend automatically attempts a refresh after a `401` response and retries the original request.
-
-For production deployment, use HTTPS, secure/httpOnly refresh-token cookies, stronger secret management, rate limiting, logging, and additional operational hardening.
